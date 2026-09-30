@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Montechiaro | Casa Famiglia per Anziani Fivizzano</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f9f9f9; scroll-behavior: smooth; }
+        header { background-color: #2c3e50; color: #fff; padding: 40px 20px 20px 20px; text-align: center; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2, h3, h4 { color: #2c3e50; }
+        .contact-bar { background: #e74c3c; color: white; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9rem; }
+        .contact-bar a { color: white; text-decoration: none; margin: 0 10px; }
+        nav { background-color: #34495e; text-align: center; position: -webkit-sticky; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .nav-menu { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        .nav-menu li a { display: block; color: white; padding: 15px 20px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+        .nav-menu li a:hover { background-color: #2c3e50; }
+        section { padding: 40px 0 20px 0; }
+        
+        .row-section { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin: 20px 0; }
+        .text-col { flex: 1; min-width: 300px; }
+        .img-col { flex: 1; min-width: 300px; height: 320px; object-fit: cover; border-radius: 8px; }
+        
+        .features { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 30px 0; }
+        .feature-card { flex: 1; min-width: 280px; margin: 10px; padding: 20px; background: #f4f6f7; border-radius: 6px; text-align: center; }
+        .pricing { display: flex; flex-wrap: wrap; justify-content: space-around; margin: 30px 0; gap: 20px; }
+        
+        /* Riquadri prezzi e gestione foto intere */
+        .price-card { background: #fff; border: 2px solid #bdc3c7; border-radius: 8px; padding: 20px; width: 45%; min-width: 280px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); box-sizing: border-box; }
+        .price-card h4 { margin-top: 0; font-size: 1.5rem; }
+        .price { font-size: 2rem; color: #e74c3c; font-weight: bold; margin: 15px 0; }
+        
+        /* Tasto Chiama Ora visibile e cliccabile */
+        .btn-call { display: inline-block; background: #27ae60; color: white; padding: 14px 28px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; font-size: 1.1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: background 0.3s; }
+        .btn-call:hover { background: #219653; }
+        
+        .main-img { display: block; width: 100%; max-width: 800px; height: 320px; object-fit: cover; border-radius: 8px; margin: 0 auto 20px auto; }
+        
+        /* Foto camere larghe e intere (Niente più foto a metà) */
+        .card-img { width: 100%; height: auto; max-height: 220px; object-fit: contain; background-color: #fcfcfc; border-radius: 6px; margin-bottom: 15px; display: block; }
+        
+        /* NUOVO PULSANTE WHATSAPP CON ICONA VISIBILE */
+        .whatsapp-button { position: fixed; bottom: 30px; right: 30px; width: 65px; height: 65px; background-color: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 2px 4px 10px rgba(0,0,0,0.3); z-index: 9999; text-decoration: none; transition: transform 0.2s; }
+        .whatsapp-button:hover { transform: scale(1.1); background-color: #20ba5a; }
+        .whatsapp-button img { width: 38px; height: 38px; display: block; }
+
+        footer { background: #34495e; color: white; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9rem; }
+        hr { border: 0; height: 1px; background: #e0e0e0; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="contact-bar">
+        📞 Fisso: <a href="tel:058592107">0585 92107</a> | 📱 Cell: <a href="tel:3284731592">328 473 1592</a> | 📍 Turlago, Fivizzano (MS)
+    </div>
+    <header>
+        <h1>Villa Montechiaro</h1>
+        <p>La serenità di una vera famiglia</p>
+    </header>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#presentazione">Chi Siamo</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#spazi">Spazi Comuni</a></li>
+            <li><a href="#tariffe">Tariffe e Camere</a></li>
+            <li><a href="#contatti">Dove Siamo</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <img src="struttura.jpg" onerror="this.src='struttura.png'; this.onerror=function(){this.src='struttura.webp';}" alt="Villa Montechiaro - Esterno" class="main-img">
+        
+        <section id="presentazione">
+            <div class="row-section">
+                <div class="text-col">
+                    <h2>Un ambiente intimo e familiare per la Terza Età</h2>
+                    <p>Situata a Turlago, nel comune di Fivizzano, la nostra casa famiglia accoglie un <strong>massimo di 8 ospiti</strong> autosufficienti o parzialmente autosufficienti. La nostra filosofia si basa sulla centralità dell'anziano, che viene inserito in un contesto del tutto simile a quello domestico per preservare i legami familiari in una splendida cornice rilassante nel verde della Lunigiana a 700 metri d'altitudine.</p>
+                    <!-- TASTO CHIAMA ORA RIPRISTINATO -->
+                    <a href="tel:3284731592" class="btn-call">📞 Chiama Ora</a>
+                </div>
+                <img src="soggiorno.jpg" onerror="this.src='soggiorno.png'; this.onerror=function(){this.src='soggiorno.webp';}" alt="Interno Villa Montechiaro - Soggiorno" class="img-col">
+            </div>
+        </section>
+        
+        <hr>
+        
+        <section id="servizi">
+            <h2 style="text-align: center;">Comfort e Assistenza di Qualità</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>♿ Massima Accessibilità</h3>
+                    <p>La struttura è completamente priva di barriere architettoniche, dotata di scivoli d'accesso, bagni a norma e una rampa interna per muoversi in totale sicurezza.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🧺 Servizi Inclusi</h3>
+                    <p>Assistenza di base quotidiana, servizio lavanderia e guardaroba personalizzato, oltre alla piena assistenza per visite mediche e pratiche burocratiche.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🌐 Camere Connesse</h3>
+                    <p>Disponiamo di camere singole e doppie luminose, tutte dotate di televisione satellitare e collegamento internet Wi-Fi per restare sempre in contatto con i parenti.</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section id="spazi">
+            <div class="row-section">
+                <img src="sala-pranzo.jpg" onerror="this.src='sala-pranzo.png'; this.onerror=function(){this.src='sala-pranzo.webp';}" alt="Villa Montechiaro - Sala Pranzo" class="img-col">
+                <div class="text-col">
+                    <h2>Spazi condivisi pensati per la socialità</h2>
+                    <p>La vita a Villa Montechiaro si svolge in ambienti ampi e luminosi. La nostra **sala da pranzo** è il luogo ideale dove gli ospiti si riuniscono per consumare pasti genuini cucinati in struttura e per trascorrere momenti felici in compagnia. Tutti gli accessi e i corridoi interni sono studiati per consentire il transito sicuro anche a chi ha ridotta capacità motoria.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        
+        <section id="tariffe">
+            <h2 style="text-align: center;">Trasparenza nelle Tariffe</h2>
+            <p style="text-align: center;">Offriamo un soggiorno assistito di ottimo livello con prezzi chiari bloccati mensilmente.</p>
+            <div class="pricing">
+                <!-- CAMERA DOPPIA -->
+                <div class="price-card">
+                    <img src="camera-doppia.jpg" onerror="this.src='camera-doppia.png'; this.onerror=function(){this.src='camera-doppia.webp';}" alt="Camera Doppia" class="card-img">
+                    <h4>Camera Doppia</h4>
+                    <div class="price">€1.400 <span style="font-size: 1rem; color: #7f8c8d;">/ mese</span></div>
+                    <p style="font-size: 0.9rem; color: #7f8c8d;">IVA inclusa</p>
+                </div>
+                <!-- CAMERA SINGOLA CORRETTA E ALLARGATA -->
+                <div class="price-card">
+                    <img src="camera-singola.jpg" onerror="this.src='camera-singola.png'; this.onerror=function(){this.src='camera-singola.webp';}" alt="Camera Singola" class="card-img">
+                    <h4>Camera Singola</h4>
+                    <div class="price">€1.500 <span style="font-size: 1rem; color: #7f8c8d;">/ mese</span></div>
+                    <p style="font-size: 0.9rem; color: #7f8c8d;">IVA inclusa</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        
+        <section id="contatti" style="margin-bottom: 20px;">
+            <h2>Vieni a Trovarci a Turlago</h2>
+            <p>La struttura dista 5 km dal centro di Fivizzano, 20 km dal casello autostradale di Aulla e 40 minuti da La Spezia. Contattaci per verificare la disponibilità delle camere.</p>
+            <p>📍 <strong>Indirizzo:</strong> Via Monte San Michele 7, Località Turlago - 54013 Fivizzano (MS)</p>
+            <p>📞 <strong>Telefono Fisso:</strong> 0585 92107 | 📱 <strong>Cellulare:</strong> 328 473 1592</p>
+        </section>
+    </div>
+    
+    <!-- NUOVO PULSANTE WHATSAPP CON LOGO BIANCO INCLUSO DA INTERNET -->
